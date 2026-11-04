@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "user-summary-tool"
+version = "0.1.0"
+description = "Small typed example package for loading, normalizing, and querying user summaries."
+readme = "README.md"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = ["mypy>=1.10", "pytest>=8.0"]
+
+[project.scripts]
+user-summary = "user_summary_tool.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
