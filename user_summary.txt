@@ -1,2 +1,3 @@
 user_id=user_001
 status=inside
+confidence=0.91
