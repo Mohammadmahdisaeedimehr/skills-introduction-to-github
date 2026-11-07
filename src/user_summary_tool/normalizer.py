@@ -17,7 +17,7 @@ def normalize_status(status: str) -> str:
     return normalized
 
 
-def normalize_confidence(value: str | int | float | None) -> float | None:
+def normalize_confidence(value: str | float | None) -> float | None:
     if value is None:
         return None
 
