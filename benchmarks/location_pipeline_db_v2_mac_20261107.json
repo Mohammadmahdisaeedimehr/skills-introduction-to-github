@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-11-07",
+  "platform": "macOS",
+  "dataset_rows": 21454,
+  "summary_groups": 3,
+  "repeats": 5,
+  "query": "count rows grouped by final_location_code",
+  "csv": {
+    "min_seconds": 0.03964562499913882,
+    "median_seconds": 0.03971104100037337,
+    "max_seconds": 0.04533208299926628
+  },
+  "postgres": {
+    "min_seconds": 0.010671667000679008,
+    "median_seconds": 0.012433792000592803,
+    "max_seconds": 0.03390350000063336
+  },
+  "result_group_count": {
+    "csv": 3,
+    "postgres": 3
+  },
+  "median_speedup_postgres_vs_csv": 3.1937996870528376
+}

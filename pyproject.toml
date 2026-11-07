@@ -8,13 +8,19 @@ version = "0.1.0"
 description = "Small typed example package for loading, normalizing, and querying user summaries."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = ["python-dotenv>=1.0"]
+dependencies = [
+    "pandas>=2.2",
+    "psycopg[binary]>=3.2",
+    "pyarrow>=18.0",
+    "python-dotenv>=1.0",
+]
 
 [project.optional-dependencies]
 dev = ["mypy>=1.10", "pytest>=8.0", "ruff>=0.8"]
 
 [project.scripts]
 user-summary = "user_summary_tool.cli:main"
+location-pipeline-v2 = "location_pipeline_db_v2.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
