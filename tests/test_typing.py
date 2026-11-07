@@ -31,7 +31,7 @@ def test_loader_accepts_path_object(tmp_path: Path) -> None:
     ],
 )
 def test_normalize_confidence_optional_union(
-    value: str | int | float | None,
+    value: str | float | None,
     expected: float | None,
 ) -> None:
     assert normalize_confidence(value) == expected
@@ -39,7 +39,7 @@ def test_normalize_confidence_optional_union(
 
 @pytest.mark.parametrize("value", ["-0.01", 1.01, 2])
 def test_normalize_confidence_rejects_out_of_range(
-    value: str | int | float,
+    value: str | float,
 ) -> None:
     with pytest.raises(ValueError):
         normalize_confidence(value)
