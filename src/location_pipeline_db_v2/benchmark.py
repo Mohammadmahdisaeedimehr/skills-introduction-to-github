@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Callable
 from statistics import median
 from time import perf_counter
-from collections.abc import Callable
 from typing import Any
 
 import pandas as pd
